@@ -28,9 +28,13 @@ while (1):
     file_content = file.read()
     tofind1 = "man"
     tofind2 = "woman"
+    
 
     if tofind1 in str(file_content) and tofind2 in str(file_content):
         result = open('result.txt' , "w+")
         result.write("Danger")
+        result.close()
+       
+    file.close()
 
   
